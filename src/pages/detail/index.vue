@@ -1,19 +1,12 @@
 <template>
-  <view class="index">
-    <text>{{ msg }}</text>
+  <view class="detail">
+    <canvas id="myCanvas" type="2d"></canvas>
   </view>
 </template>
 
 <script>
-import { ref } from 'vue'
-import './index.css'
+import taro from '@tarojs/taro';
 
 export default {
-  setup () {
-    const msg = ref('Hello world')
-    return {
-      msg
-    }
-  }
 }
 </script>
